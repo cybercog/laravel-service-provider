@@ -1,0 +1,14 @@
+{
+    "name": "cybercog/laravel-service-provider",
+    "description": "Service Provider for Laravel 5 Packages",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.0|~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cog\\ServiceProvider\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
