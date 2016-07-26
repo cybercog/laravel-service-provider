@@ -16,6 +16,7 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * Class BaseServiceProvider.
+ * @package Cog\ServiceProvider
  */
 abstract class BaseServiceProvider extends ServiceProvider
 {
@@ -34,7 +35,6 @@ abstract class BaseServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
     }
 
     /**
@@ -42,7 +42,6 @@ abstract class BaseServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
     }
 
     /**
@@ -129,7 +128,7 @@ abstract class BaseServiceProvider extends ServiceProvider
                 if (class_exists($this->getClassFromFile($file))) {
                     continue;
                 }
-                    
+
                 $fileDestination = $this->prepareMigrationFile($file);
                 $paths[$file] = $this->buildDestPath('migrations', [
                     date('Y_m_d_His', time()),
