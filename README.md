@@ -4,15 +4,11 @@ Basic service provider mockup with utility functions to speedup packages deploym
 
 ## Installation
 
-First, add dependency in `composer.json`:
+Simply install the service provider package with composer: 
 
-```js
-"require": {
-    "cybercog/laravel-service-provider": "*",
-},
+```shell
+composer require cybercog/laravel-service-provider
 ```
-
-Perform `composer update`.
 
 ## Usage
 
