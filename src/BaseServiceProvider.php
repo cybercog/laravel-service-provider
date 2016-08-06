@@ -124,6 +124,7 @@ abstract class BaseServiceProvider extends ServiceProvider
             $files = $this->buildFilesArray('migrations', $files);
 
             $paths = [];
+            $time = time();
             foreach ($files as $file) {
                 if (class_exists($this->getClassFromFile($file))) {
                     continue;
@@ -131,9 +132,10 @@ abstract class BaseServiceProvider extends ServiceProvider
 
                 $fileDestination = $this->prepareMigrationFile($file);
                 $paths[$file] = $this->buildDestPath('migrations', [
-                    date('Y_m_d_His', time()),
+                    date('Y_m_d_His', $time),
                     $this->buildFileName($fileDestination),
                 ]);
+                $time++;
             }
 
             $this->publishes($paths, 'migrations');
