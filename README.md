@@ -2,6 +2,10 @@
 
 Basic service provider mockup with utility functions to speedup packages deployment.
 
+**PROJECT IS UNMAINTAINED**
+
+Our company dropped support of this package and started to use clean Laravel Service Providers since they are able to [perform migrations without publishing](https://laravel.com/docs/5.3/packages#migrations).
+
 ## Installation
 
 Simply install the service provider package with composer: 
