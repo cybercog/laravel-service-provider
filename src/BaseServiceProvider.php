@@ -3,7 +3,7 @@
 /*
  * This file is part of Laravel Service Provider.
  *
- * (c) CyberCog LLC <cybercog.ru>
+ * (c) CyberCog LLC <https://cybercog.su>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
